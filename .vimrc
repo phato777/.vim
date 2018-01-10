@@ -100,10 +100,10 @@ let g:ctrlp_cache_dir = $HOME . '/.cache/ctrlp'
 let g:ctrlp_clear_cache_on_exit = 0
 let g:ctrlp_max_files=0
 " Ignore some folders and files for CtrlP indexing
-"let g:ctrlp_custom_ignore = {
-"  \ 'dir':  '\.git$\|\.yardoc\|node_modules\|log\|tmp\|storage\|bootstrap\|secure\|wf\|tests$',
-"  \ 'file': '\.so$\|\.dat$|\.DS_Store$'
-"  \ }
+let g:ctrlp_custom_ignore = {
+  \ 'dir':  '\.git$\|node_modules$\|log$\|tmp$\|storage$\|bootstrap$\|secure$\|wf$\|tests$',
+  \ 'file': '\.so$\|\.dat$|\.DS_Store$'
+  \ }
 
 nmap <C-p> :CtrlP<cr>
 "nmap <C-r> :CtrlPBufTag<cr>
