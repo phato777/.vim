@@ -93,7 +93,7 @@ map <leader>q :bp<bar>sp<bar>bn<bar>bd<CR>
 "/
 "/ CtrlP
 "/
-let g:ctrlp_custom_ignore = 'node_modules\|DS_Store\|git'
+"let g:ctrlp_custom_ignore = 'node_modules\|DS_Store\|git'
 let g:ctrlp_match_window  = 'top,order:ttb,min:1,max:30,results:30'
 let g:ctrlp_extensions = ['buffertag']
 let g:ctrlp_cache_dir = $HOME . '/.cache/ctrlp'
@@ -101,7 +101,7 @@ let g:ctrlp_clear_cache_on_exit = 0
 let g:ctrlp_max_files=0
 " Ignore some folders and files for CtrlP indexing
 let g:ctrlp_custom_ignore = {
-  \ 'dir':  '\.git$\|node_modules$\|log$\|tmp$\|storage$\|bootstrap$\|secure$\|wf$\|tests$',
+  \ 'dir':  '\.git$\|node_modules$\|bootstrap$',
   \ 'file': '\.so$\|\.dat$|\.DS_Store$'
   \ }
 
