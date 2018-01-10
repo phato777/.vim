@@ -110,7 +110,7 @@ let g:ctrlp_custom_ignore = {
   \ }
 
 nmap <C-p> :CtrlP<cr>
-"nmap <C-r> :CtrlPBufTag<cr>
+nmap <Leader>tag :CtrlPBufTag<cr>
 nmap <C-e> :CtrlPMRUFiles<cr>
 "nmap <D-t> <Plug>PeepOpen
 
@@ -155,6 +155,11 @@ let g:UltiSnipsJumpBackwardTrigger="<s-tab>"
 " Define some single Blade directives. This variable is used for highlighting only.
 let g:blade_custom_directives = ['vccomponent']
 
+"/
+"/ vim-workspace
+"/
+let g:workspace_autosave_untrailspaces = 0
+
 
 "-------------Laravel-Specific--------------"
 nmap <Leader>lr :e app/Http/routes.php<cr>
@@ -163,10 +168,6 @@ nmap <Leader><Leader>c :e app/Http/Controllers/<cr>
 nmap <Leader><Leader>m :CtrlP<cr>app/
 nmap <Leader><Leader>v :e resources/views/<cr>
 
-"/
-"/ vim-workspace
-"/
-let g:workspace_autosave_untrailspaces = 0
 
 
 
