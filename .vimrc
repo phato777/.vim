@@ -159,6 +159,10 @@ nmap <Leader><Leader>c :e app/Http/Controllers/<cr>
 nmap <Leader><Leader>m :CtrlP<cr>app/
 nmap <Leader><Leader>v :e resources/views/<cr>
 
+"/
+"/ vim-workspace
+"/
+let g:workspace_autosave_untrailspaces = 0
 
 
 

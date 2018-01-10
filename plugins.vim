@@ -25,7 +25,8 @@ Plugin 'SirVer/ultisnips'
 Plugin 'jwalton512/vim-blade'
 Plugin 'kristijanhusak/vim-hybrid-material'
 Plugin 'mattn/emmet-vim'
-Plugin 'wting/gitsessions.vim'
+"Plugin 'wting/gitsessions.vim'
+Plugin 'thaerkh/vim-workspace'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
