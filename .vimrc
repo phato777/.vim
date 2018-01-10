@@ -82,7 +82,11 @@ nmap <Leader>f :tag<space>
 vmap <Leader>su ! awk '{ print length(), $0 \| "sort -n \| cut -d\\  -f2-" }'<cr>
 
 "ctags
-nmap <Leader>ct :!ctags -R --exclude=.git --exclude=bootstrap --exclude=config --exclude=database --exclude=node_modules --exclude=packages --exclude=public --exclude=resources --exclude=routes --exclude=secure --exclude=storage --exclude=tests --exclude=wf<cr>
+if has('win32') || has('win32unix')
+    nmap <Leader>ct :!ctags.exe -R --exclude=.git --exclude=bootstrap --exclude=config --exclude=database --exclude=node_modules --exclude=packages --exclude=public --exclude=resources --exclude=routes --exclude=secure --exclude=storage --exclude=tests --exclude=wf<cr>
+else
+    nmap <Leader>ct :!ctags -R --exclude=.git --exclude=bootstrap --exclude=config --exclude=database --exclude=node_modules --exclude=packages --exclude=public --exclude=resources --exclude=routes --exclude=secure --exclude=storage --exclude=tests --exclude=wf<cr>
+endif
 
 "close buffer and replace with next
 map <leader>q :bp<bar>sp<bar>bn<bar>bd<CR>
