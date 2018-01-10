@@ -153,7 +153,7 @@ let g:UltiSnipsJumpBackwardTrigger="<s-tab>"
 "/ vim-blade
 "/
 " Define some single Blade directives. This variable is used for highlighting only.
-let g:blade_custom_directives = ['vcomponent']
+let g:blade_custom_directives = ['vccomponent']
 
 
 "-------------Laravel-Specific--------------"
