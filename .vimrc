@@ -14,18 +14,22 @@ set expandtab
 set softtabstop=4
 set shiftwidth=4
 set ignorecase
-
+let g:loaded_matchparen=1
 
 
 
 "-------------Visuals--------------"
-colorscheme elflord
+if has('gui_running')
+    colorscheme hybrid_material
+else
+    colorscheme default
+endif
 set background=dark
 set t_CO=256								"Use 256 colors. This is useful for Terminal Vim.
-set guifont=Fira\ Code:h17						"Set the default font family and size.
+set guifont=Fira\ Code:h9						"Set the default font family and size.
 "set macligatures							"We want pretty symbols, when available.
 set guioptions-=e							"We don't want Gui tabs.
-set linespace=16   						        "Macvim-specific line-height.
+set linespace=9   						        "Macvim-specific line-height.
 "set lines=999
 
 set guioptions-=l                                                       "Disable Gui scrollbars.
@@ -40,7 +44,7 @@ hi LineNr guibg=bg
 hi foldcolumn guibg=bg
 
 "Get rid of ugly split borders.
-hi vertsplit guifg=bg guibg=bg
+hi vertsplit guifg=#5C737E guibg=bg
 hi vertsplit ctermfg=black ctermbg=grey
 
 
@@ -91,7 +95,7 @@ endif
 
 "close buffer and replace with next
 map <leader>q :bp<bar>sp<bar>bn<bar>bd<CR>
-
+"inoremap {<CR> {<CR>}<C-o>O
 
 "-------------Plugins--------------"
 

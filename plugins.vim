@@ -29,6 +29,7 @@ Plugin 'mattn/emmet-vim'
 "Plugin 'wting/gitsessions.vim'
 Plugin 'thaerkh/vim-workspace'
 Plugin 'wesQ3/vim-windowswap'
+Plugin 'Raimondi/delimitMate'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
