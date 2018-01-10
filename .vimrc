@@ -82,7 +82,7 @@ nmap <Leader>f :tag<space>
 vmap <Leader>su ! awk '{ print length(), $0 \| "sort -n \| cut -d\\  -f2-" }'<cr>
 
 "ctags
-nmap <Leader>ct :!ctags.exe -R --exclude=.git --exclude=bootstrap --exclude=config --exclude=database --exclude=node_modules --exclude=packages --exclude=public --exclude=resources --exclude=routes --exclude=secure --exclude=storage --exclude=tests --exclude=wf<cr>
+nmap <Leader>ct :!ctags -R --exclude=.git --exclude=bootstrap --exclude=config --exclude=database --exclude=node_modules --exclude=packages --exclude=public --exclude=resources --exclude=routes --exclude=secure --exclude=storage --exclude=tests --exclude=wf<cr>
 
 "close buffer and replace with next
 map <leader>q :bp<bar>sp<bar>bn<bar>bd<CR>
@@ -98,11 +98,12 @@ let g:ctrlp_match_window  = 'top,order:ttb,min:1,max:30,results:30'
 let g:ctrlp_extensions = ['buffertag']
 let g:ctrlp_cache_dir = $HOME . '/.cache/ctrlp'
 let g:ctrlp_clear_cache_on_exit = 0
+let g:ctrlp_max_files=0
 " Ignore some folders and files for CtrlP indexing
-let g:ctrlp_custom_ignore = {
-  \ 'dir':  '\.git$\|\.yardoc\|node_modules\|log\|tmp\|storage\|bootstrap\|secure\|wf\|tests$',
-  \ 'file': '\.so$\|\.dat$|\.DS_Store$'
-  \ }
+"let g:ctrlp_custom_ignore = {
+"  \ 'dir':  '\.git$\|\.yardoc\|node_modules\|log\|tmp\|storage\|bootstrap\|secure\|wf\|tests$',
+"  \ 'file': '\.so$\|\.dat$|\.DS_Store$'
+"  \ }
 
 nmap <C-p> :CtrlP<cr>
 "nmap <C-r> :CtrlPBufTag<cr>
