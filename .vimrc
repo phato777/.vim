@@ -18,7 +18,7 @@ set shiftwidth=4
 
 
 "-------------Visuals--------------"
-colorscheme default
+colorscheme elflord
 set background=dark
 set t_CO=256								"Use 256 colors. This is useful for Terminal Vim.
 set guifont=Fira\ Code:h17						"Set the default font family and size.
