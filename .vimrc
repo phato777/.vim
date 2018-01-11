@@ -95,7 +95,9 @@ endif
 
 "close buffer and replace with next
 map <leader>q :bp<bar>sp<bar>bn<bar>bd<CR>
-"inoremap {<CR> {<CR>}<C-o>O
+
+"escape insert with Shift+Enter
+:imap ` <Esc>
 
 "-------------Plugins--------------"
 
