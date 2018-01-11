@@ -21,8 +21,6 @@ let g:loaded_matchparen=1
 "-------------Visuals--------------"
 if has('gui_running')
     colorscheme hybrid_material
-else
-    colorscheme default
 endif
 set background=dark
 set t_CO=256								"Use 256 colors. This is useful for Terminal Vim.
